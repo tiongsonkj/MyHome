@@ -13,10 +13,13 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- separate CSS -->
+    <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
 </head>
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-light bg-light justify-content-between">
+    <nav class="navbar navbar-light justify-content-between">
         <a class="navbar-brand">My Home</a>
         <form class="form-inline">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Home</button>
@@ -26,41 +29,69 @@
     </nav>
 
     <!-- main page jumbotron -->
-    <div class="jumbotron jumbotron-fluid" style="height: 400px;">
+    <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4">Fluid jumbotron</h1>
-            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            <h1>Welcome to MyHome!</h1>
+            <p>This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+            <form>
+                <input type="text" id="searchInput">
+                <button type="submit" class="btn btn-success">Search</button>
+            </form>
         </div>
     </div>
 
-    <!-- temporary example, but first house that loads up -->
-    <div class="card" style="width: 18rem; margin: auto">
-        <img class="card-img-top" src="http://www.ballantynebuzz.com/wp-content/uploads/IMG_44831.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+    <!-- container that has all the cards loaded inside -->
+    <div class="container">
+        <!-- temporary example, but first house that loads up -->
+        <div class="card houses" style="width: 300px; margin: 0">
+            <img class="card-img-top" src="http://www.ballantynebuzz.com/wp-content/uploads/IMG_44831.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
         </div>
-    </div>
 
-    <!-- temporary example, but house that loads up -->
-    <div class="card" style="width: 18rem; margin: auto">
-        <img class="card-img-top" src="http://www.ballantynebuzz.com/wp-content/uploads/IMG_44831.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <!-- temporary example, but house that loads up -->
+        <div class="card houses" style="width: 300px;">
+            <img class="card-img-top" src="http://www.ballantynebuzz.com/wp-content/uploads/IMG_44831.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
         </div>
-    </div>
 
-    <!-- temporary example, but first house that loads up -->
-    <div class="card" style="width: 18rem; margin: auto">
-        <img class="card-img-top" src="http://www.ballantynebuzz.com/wp-content/uploads/IMG_44831.jpg" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <!-- temporary example, but first house that loads up -->
+        <div class="card houses" style="width: 300px;">
+            <img class="card-img-top" src="http://www.ballantynebuzz.com/wp-content/uploads/IMG_44831.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <!-- temporary example, but first house that loads up -->
+        <div class="card houses" style="width: 300px;">
+            <img class="card-img-top" src="http://www.ballantynebuzz.com/wp-content/uploads/IMG_44831.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
         </div>
     </div>
+    
 </body>
 </html>
